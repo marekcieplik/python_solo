@@ -3,11 +3,11 @@ import Functional_Programming as f_P
 
 
 class MyTestCase(unittest.TestCase):
-    def test_multiple(self):
-        self.assertEqual(f_P.multiple(2), 4)  # add assertion here
+    def test_power(self):
+        self.assertEqual(f_P.power(2), 4)  # def power(x) -> x * x
 
-    def test_multiple_twice(self):
-        self.assertEqual((f_P.multiple_twice(fp.multiple, 2)), 64)
+    def test_double_(self):
+        self.assertEqual((f_P.double_(f_P.power, 2)), 8)  # def double_(func, arg) -> 2 * func(arg)
 
 
 if __name__ == '__main__':
